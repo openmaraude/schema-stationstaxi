@@ -55,14 +55,16 @@ ci-dessous.
 Nom du fichier : `stationstaxi_nom_AAAAMMJJ.csv` avec `nom` étant le nom de la collectivité productrice des données,
 par exemple : `stationstaxi_GrenobleAlpesMetropole_20210503.csv`.
 
-Le format GeoJSON est également accepté pour les géographies de station plus complexes qu’un point (polygone ou multipolygone). Le fichier doit être un FeatureCollection où chaque station est une Feature et les colonnes deviennent des propriétés (properties) de chaque feature.
+Le format GeoJSON est également accepté pour les géographies de station plus complexes qu’un point (polygone ou
+multipolygone). Le fichier doit être un FeatureCollection où chaque station est une Feature et les colonnes deviennent
+des propriétés (properties) de chaque feature.
 
 ### Fichiers d'exemple
 
 Vous pouvez télécharger des fichiers gabarit d'exemple :
 
-- un [fichier au format CSV]() ;
-- un [fichier au format GeoJSON]().
+- un [fichier au format CSV](https://github.com/openmaraude/schema-stationstaxi/raw/v0.1.0/exemple-valide.csv) ;
+- un [fichier au format XLSX](https://github.com/openmaraude/schema-stationstaxi/raw/v0.1.0/exemple-valide.xlsx).
 
 ### Mises à jour
 
