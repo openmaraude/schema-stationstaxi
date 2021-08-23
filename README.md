@@ -1,64 +1,89 @@
-# Template de départ pour Table Schema
+# Schéma des stations de taxi
 
-Ce dépôt contient les fichiers nécessaires pour démarrer la création d'un dépôt pour un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+Ce schéma permet de modéliser les stations de taxi à usage public.
 
-## Utiliser ce template
+## Contexte
 
-- Si vous créez votre dépôt sur GitHub, il vous suffit d'appuyer sur le bouton vert "Use this template". Consultez [la documentation](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) pour plus d'infos ;
-- Si votre projet sera hébergé ailleurs (par exemple Gitlab), vous pouvez cloner ce répertoire ou télécharger les fichiers correspondants. Utilisez le bouton "Clone or download".
+Dans le cadre des travaux de l'équipe du Registre de disponibilité des taxis et de la mise en œuvre de l'ouverture des
+données pour améliorer l'information dont disposent les voyageurs, l'équipe du [le.taxi](https://le.taxi) propose une
+solution simple et structurée pour l'ouverture des données de stations de taxi en France : la Base Consolidée des
+données de Station de Taxi (BCST).
 
-## Fichiers disponibles
+Il s'adresse à toute agglomération qui dispose de stations de taxi sur son territoire.
 
-Ce dépôt contient un ensemble de fichiers utiles pour un dépôt d'un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+L'équipe du [le.taxi](https://le.taxi) met à disposition des acteurs un générateur CSV conforme au schéma de données,
+ainsi qu'un validateur pour les collectivités productrices de données.
 
-- [`CHANGELOG.md`](CHANGELOG.md) contient la liste des changements entre les différentes versions de votre schéma ;
-- [`exemple-valide.csv`](exemple-valide.csv) est un fichier CSV d'exemple conforme par rapport au schéma décrit dans `schema.json`  ;
-- [`LICENSE.md`](LICENSE.md) est le fichier de licence du dépôt. Nous recommandons d'utiliser la [Licence Ouverte](https://www.etalab.gouv.fr/licence-ouverte-open-licence), cette licence est recommandée par l'administration française pour le partage de données et de documents ;
-- [`README.md`](README.md) est le fichier que vous lisez actuellement. À terme, il devra présenter votre schéma ;
-- [`requirements.txt`](requirements.txt) liste les dépendances Python nécessaires pour effectuer des tests en intégration continue sur votre dépôt ;
-- [`schema.json`](schema.json) est le schéma au format Table Schema.
+## Cadre juridique
 
-### Intégration continue
+TODO
 
-Ce dépôt est configuré pour utiliser de l'intégration continue, si vous utilisez GitHub. À chaque commit, une suite de tests sera lancée via [GitHub Actions](https://github.com/features/actions) afin de vérifier :
+## Finalité
 
-- que votre schéma est valide à la spécification Table Schema ;
-- que vos fichiers d'exemples sont conformes au schéma.
+La base des stations de taxi permet de regrouper en un unique fichier consolidé l’ensemble des stations de taxi en
+France, dans un format standard et unifié. Cette standardisation des données facilite grandement le travail
+d’intégration de ces données par des services réutilisateurs.
 
-Si vous n'utilisez pas GitHub, vous pouvez lancer ces tests sur votre machine ou sur un autre service d'intégration continue comme Gitlab CI, Jenkins, Circle CI, Travis etc. Consultez la configuration utilisée dans [`.github/workflows/test.yml`](.github/workflows/test.yml).
+La base présente plusieurs cas d’usage :
 
-Localement, voici la procédure à suivre pour installer l'environnement de test et lancer les tests :
+- Elle permet de mettre en avant l’offre de stations de taxi d’une collectivité en permettant à des services de
+  mobilité d’intégrer ces données.
+- Elle peut également servir à connaître le nombre de taxis disponibles en temps réel à une station.
 
-```bash
-# Création d'un environnement virtuel en Python 3
-python3 -m venv venv
-source venv/bin/activate
+La base n’est pas destinée à remplacer les formats et schémas déjà utilisés en interne par les collectivités pour la
+gestion de la voirie et du mobilier urbain. Le schéma doit être vu comme un format d’export interopérable.
 
-# Installation des dépendances
-pip install -r requirements.txt
+### Transmission des données
 
-# Test de la validité du schéma
-frictionless validate --type schema schema.json
+Dans le but de constituer un répertoire consolidé des stations de taxi en France, les collectivités peuvent transmettre
+systématiquement les données relatives aux stations à usage public.
 
-# Test de la conformité des fichiers d'exemples
-frictionless validate --schema schema.json exemple-valide.csv
-```
+Elles peuvent ajouter le mot-clé `stationtaxi` lors de la publication du jeu de données sur leur espace de publication
+ou directement sur data.gouv.fr.
 
-## Étapes à suivre
+En cas de mise à jour d'un fichier déjà intégré à la base consolidée, il est recommandé de prévenir l'équipe du le.taxi
+afin de s'assurer que la mise à jour du fichier a bien été prise en compte et intégrée à la base consolidée.
 
-Nous détaillons ci-dessous les étapes que nous vous conseillons de suivre après avoir créé votre dépôt Git, tout en utilisant les fichiers d'exemples.
+### Format de fichier
 
-- [ ] Décrire votre schéma dans le fichier `schema.json` en respectant la spécification Table Schema. Le fichier d'exemple comprend des valeurs d'exemples pour toutes les métadonnées possibles. Notez que les champs d'exemple ne comprennent qu'une petite partie des types, formats et contraintes disponibles, référez-vous à [la documentation](https://specs.frictionlessdata.io/table-schema/#types-and-formats) pour toutes les valeurs possibles. Si certaines métadonnées ne sont pas nécessaires pour votre projet, vous pouvez les supprimer. Pour vérifier que votre schéma est conforme, vous pouvez utiliser l'outil [tableschema](https://pypi.org/project/tableschema/) en ligne de commande : `tableschema validate schema.json`
-- [ ] Modifier le fichier d'exemple CSV avec des données conforme à votre schéma. L'outil [frictionless](https://pypi.org/project/frictionless/) permet de vérifier que vos fichiers sont conformes au schéma en ligne de commande `frictionless validate --schema schema.json exemple-valide.csv`
-- [ ] Modifier le fichier [`CHANGELOG.md`](CHANGELOG.md) pour indiquer la publication initiale
-- [ ] Modifier le fichier [`README.md`](README.md), en supprimant tout son contenu tout d'abord. Au sein de plusieurs paragraphes, vous indiquerez le contexte, les modalités de production des données, le cadre juridique, la finalité, les cas d’usage etc. Consultez plusieurs schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour découvrir quelles informations sont pertinentes à indiquer
-- [ ] Vérifier que la licence ouverte vous convient. Si vous devez utiliser une autre licence, modifiez le fichier [`LICENSE.md`](LICENSE.md) et indiquez la licence dans le fichier [`schema.json`](schema.json), dans la clé `licenses`
+Le fichier doit être au format CSV, avec codage UTF-8. La virgule ou le point-virgule sont tous les deux acceptés comme
+séparateur. La mise entre guillemets des cellules est recommandée pour éviter toute ambiguïté avec un séparateur dans
+le contenu. L’en-tête de colonne sur la première ligne est obligatoire. Toutes les colonnes sont obligatoires ; si la
+donnée n’est pas disponible, la colonne doit être présente et vide. L’ordre des colonnes suit l’ordre des champs listés
+ci-dessous.
 
+Nom du fichier : `stationstaxi_nom_AAAAMMJJ.csv` avec `nom` étant le nom de la collectivité productrice des données,
+par exemple : `stationstaxi_GrenobleAlpesMetropole_20210503.csv`.
 
-## Documentation
+Le format GeoJSON est également accepté pour les géographies de station plus complexes qu’un point (polygone ou multipolygone). Le fichier doit être un FeatureCollection où chaque station est une Feature et les colonnes deviennent des propriétés (properties) de chaque feature.
 
-Pour vous aider dans la construction de votre dépôt, nous vous recommandons de vous référer à :
+### Fichiers d'exemple
 
-- [Le guide à destination des producteurs de schéma](https://guides.etalab.gouv.fr/producteurs-schemas/)
-- [La documentation de schema.data.gouv.fr](https://schema.data.gouv.fr)
-- [La spécification Table Schema](https://specs.frictionlessdata.io/table-schema/)
+Vous pouvez télécharger des fichiers gabarit d'exemple :
+
+- un [fichier au format CSV]() ;
+- un [fichier au format GeoJSON]().
+
+### Mises à jour
+
+Les mises à jour sont effectuées à partir du fichier communiqué précédemment et en reprennent, en les modifiant le cas
+échéant, les données qui y figurent déjà.
+
+## Consolidation
+
+L'équipe du [le.taxi](https://le.taxi) réalise une consolidation régulière des fichiers déposée sur
+[data.gouv.fr](htps://data.gouv.fr) avec le mot-clé `stationtaxi` respectant le format de référence décrit ici.
+respectant le format de référence
+décrit ici.
+
+## Jeu de données consolidé
+
+Une consolidation est effectuée à partir de ce schéma. Vous pouvez retrouver le jeu de données résultant de cette
+consolidation sur data.gouv.fr.
+
+[Base Nationale des Stations de taxi (BNST)](TODO)
+
+## Jeux de données sur data.gouv.fr
+
+Il est possible de spécifier qu'une ressource d'un jeu de données présent sur [data.gouv.fr](https://data.gouv.fr)
+respecte un schéma depuis l'interface d'administration. Retrouvez [les jeux de données](https://www.data.gouv.fr/fr/datasets/?schema=TODO) ayant indiqué respecter ce schéma sur la plateforme des données ouvertes.

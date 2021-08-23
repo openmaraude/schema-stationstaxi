@@ -1,4 +1,18 @@
-id,date_creation,nom,classification
-42,2020-02-27,Brouette,"[""Classification A""]"
-44,2020-02-25,Pelle,"[""Classification A"",""Classification B"",""Classification C""]"
-45,2020-02-25,Bus,"[""Classification A"",""Classification C""]"
+"id";"nom";"insee";"xlong";"ylat";"adresse";"emplacements";"no_appel";"info"
+"38185-T-001";"Vallier";38185;"5.7118754";"45.1800016";"Boulevard Joseph Vallier";6;;
+"38185-T-002";"Gare – Frise";38185;"5.71363";"45.19129";"Rue de la Frise";;"0476544254";
+"38185-T-003";"Gare – Emile Gueymard";38185;"5.715028";"45.191447";"Rue Emile Gueymard";;;
+"38185-T-004";"Gare – Casimir Brenier";38185;"5.715636";"45.191326";"Rue Casimir Brenier";;;
+"38185-T-005";"Lorraine";38185;"5.715604";"45.189905";"Place de la Gare";;;
+"38185-T-006";"Victor Hugo";38185;"5.724516";"45.189495";"Place Victor Hugo";;;
+"38185-T-007";"Joffre";38185;"5.7325";"45.18401";"Boulevard Marechal Joffre";;;
+"38421-T-001";"Ambroise Croizat";38421;"5.7529";"45.1842";"Avenue Ambroise Croizat";;;
+"38185-T-008";"Grand Place";38185;"5.73187";"45.15934";"Avenue de l’Europe";;;
+"38151-T-001";"Esmonin";38151;"5.728535";"45.15876";"Avenue Edmond Esmonin";;;
+"38229-T-001";"Gresivaudan-Aiguinards";38229;"5.762533";"45.210125";"Avenue du Gresivaudan";;;
+"38239-T-001";"Gare de Moirans";38239;"5.5819";"45.3224";"Route de la Gare";;;
+"38281-T-001";"Saint Jean";38281;"5.632017";"45.243095";"Avenue Saint Jean";;;
+"38436-T-001";"Vercors";38436;"5.643157";"45.071641";"Route du Vercors";;;
+"38529-T-001";"Uriage";38529;"5.810867";"45.118761";"Avenue d’Uriage";2;;
+"39039-T-001";"Joliot-Curie";38039;"5.870029";"45.273657";"Avenue Joliot Curie";;;
+"38314-T-001";"Gare de Pontcharra";38314;"6.008";"45.434";"Place de la Gare";3;;
