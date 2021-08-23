@@ -123,10 +123,7 @@
             "example": "0476544254",
             "type": "string",
             "constraints": {
-                "required": false,
-                "minLength": 9,
-                "maxLength": 10,
-                "pattern": "^0?[1-9]\\d{8}$"
+                "required": false
             }
         },
         {
