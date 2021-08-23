@@ -73,17 +73,3 @@ Les mises à jour sont effectuées à partir du fichier communiqué précédemme
 
 L'équipe du [le.taxi](https://le.taxi) réalise une consolidation régulière des fichiers déposée sur
 [data.gouv.fr](htps://data.gouv.fr) avec le mot-clé `stationstaxi` respectant le format de référence décrit ici.
-respectant le format de référence
-décrit ici.
-
-## Jeu de données consolidé
-
-Une consolidation est effectuée à partir de ce schéma. Vous pouvez retrouver le jeu de données résultant de cette
-consolidation sur data.gouv.fr.
-
-[Base Nationale des Stations de taxi (BNST)](TODO)
-
-## Jeux de données sur data.gouv.fr
-
-Il est possible de spécifier qu'une ressource d'un jeu de données présent sur [data.gouv.fr](https://data.gouv.fr)
-respecte un schéma depuis l'interface d'administration. Retrouvez [les jeux de données](https://www.data.gouv.fr/fr/datasets/?schema=TODO) ayant indiqué respecter ce schéma sur la plateforme des données ouvertes.
