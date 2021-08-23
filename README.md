@@ -38,7 +38,7 @@ gestion de la voirie et du mobilier urbain. Le schéma doit être vu comme un fo
 Dans le but de constituer un répertoire consolidé des stations de taxi en France, les collectivités peuvent transmettre
 systématiquement les données relatives aux stations à usage public.
 
-Elles peuvent ajouter le mot-clé `stationtaxi` lors de la publication du jeu de données sur leur espace de publication
+Elles peuvent ajouter le mot-clé `stationstaxi` lors de la publication du jeu de données sur leur espace de publication
 ou directement sur data.gouv.fr.
 
 En cas de mise à jour d'un fichier déjà intégré à la base consolidée, il est recommandé de prévenir l'équipe du le.taxi
@@ -72,7 +72,7 @@ Les mises à jour sont effectuées à partir du fichier communiqué précédemme
 ## Consolidation
 
 L'équipe du [le.taxi](https://le.taxi) réalise une consolidation régulière des fichiers déposée sur
-[data.gouv.fr](htps://data.gouv.fr) avec le mot-clé `stationtaxi` respectant le format de référence décrit ici.
+[data.gouv.fr](htps://data.gouv.fr) avec le mot-clé `stationstaxi` respectant le format de référence décrit ici.
 respectant le format de référence
 décrit ici.
 
