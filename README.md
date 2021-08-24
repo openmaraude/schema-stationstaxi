@@ -16,7 +16,17 @@ ainsi qu'un validateur pour les collectivités productrices de données.
 
 ## Cadre juridique
 
-TODO
+Le maire (ou en cas de transfert du pouvoir de police de la circulation et du stationnement le président d'EPCI) est
+compétent en application de l'article L.2213-3 du code général des collectivités territoriales pour réserver des
+emplacements sur la voie publique afin de faciliter la circulation et le stationnement des taxis. Ces emplacements ou
+groupes d’emplacements sont appelés ci-après « stations de taxi ».
+
+Un document produit par une collectivité territoriale recensant les données de localisation des stations de taxi sur son
+territoire est considéré comme un « document administratif » au sens de l’article L.300-2 du code des relations entre le
+public et l’administration. En application de l’article L. 321-1 du même code dès lors que les informations publiques
+contenues dans ces documents sont publiées ou communiqués par la collectivité territoriale, elles « peuvent être
+utilisées par toute personne qui le souhaite à d'autres fins que celles de la mission de service public pour les besoins
+de laquelle les documents ont été produits ou reçus ».
 
 ## Finalité
 
