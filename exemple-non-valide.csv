@@ -1,0 +1,18 @@
+id;nom;insee;xlong;ylat;adresse;emplacements;no_appel;info;Identifiant interne;Code administratif
+38185-T-001;Vallier;38185;5.7118754;45.1800016;Boulevard Joseph Vallier;6;;;1;A
+38185-T-002;Gare – Frise;38185;5.71363;45.19129;Rue de la Frise;;476544254;;2;B
+38185-T-003;Gare – Emile Gueymard;38185;5.715028;45.191447;Rue Emile Gueymard;;;;3;C
+38185-T-004;Gare – Casimir Brenier;38185;5.715636;45.191326;Rue Casimir Brenier;;;;4;D
+38185-T-005;Lorraine;38185;5.715604;45.189905;Place de la Gare;;;;5;E
+38185-T-006;Victor Hugo;38185;5.724516;45.189495;Place Victor Hugo;;;;6;F
+38185-T-007;Joffre;38185;5.7325;45.18401;Boulevard Marechal Joffre;;;;7;G
+38421-T-001;Ambroise Croizat;38421;5.7529;45.1842;Avenue Ambroise Croizat;;;;8;H
+38185-T-008;Grand Place;38185;5.73187;45.15934;Avenue de l’Europe;;;;9;I
+38151-T-001;Esmonin;38151;5.728535;45.15876;Avenue Edmond Esmonin;;;;10;J
+38229-T-001;Gresivaudan-Aiguinards;38229;5.762533;45.210125;Avenue du Gresivaudan;;;;11;K
+38239-T-001;Gare de Moirans;38239;5.5819;45.3224;Route de la Gare;;;;12;L
+38281-T-001;Saint Jean;38281;5.632017;45.243095;Avenue Saint Jean;;;;13;M
+38436-T-001;Vercors;38436;5.643157;45.071641;Route du Vercors;;;;14;N
+38529-T-001;Uriage;38529;5.810867;45.118761;Avenue d’Uriage;2;;;15;O
+39039-T-001;Joliot-Curie;38039;5.870029;45.273657;Avenue Joliot Curie;;;;16;P
+38314-T-001;Gare de Pontcharra;38314;6.008;45.434;Place de la Gare;3;;;17;Q
