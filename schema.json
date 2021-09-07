@@ -27,9 +27,7 @@
             "path": "https://github.com/openmaraude/schema-stationstaxi/raw/v0.1.0/exemple-valide.csv"
         }
     ],
-    "sources": [
-
-    ],
+    "sources": [],
     "created": "2021-04-07",
     "lastModified": "2021-08-24",
     "version": "0.1.0",
@@ -78,25 +76,12 @@
             }
         },
         {
-            "name": "xlong",
-            "description": "La longitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation de l'entrée du lieu exprimée dans le système de coordonnées WGS84.",
-            "example": "1.452323",
-            "type": "number",
+            "name": "geopoint",
+            "description": "La longitude, latitude au format Table Schema (https://specs.frictionlessdata.io/table-schema/#geopoint)",
+            "example": "1.452323, 46.59698",
+            "type": "geopoint",
             "constraints": {
-                "required": true,
-                "minimum": -180,
-                "maximum": 180
-            }
-        },
-        {
-            "name": "ylat",
-            "description": "La latitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation de l'entrée du lieu exprimée dans le système de coordonnées WGS84.",
-            "example": "46.59698",
-            "type": "number",
-            "constraints": {
-                "required": true,
-                "minimum": -90,
-                "maximum": 90
+                "required": true
             }
         },
         {
