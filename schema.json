@@ -122,7 +122,8 @@
         }
     ],
     "missingValues": [
-        ""
+        "",
+        "null"
     ],
     "primaryKey": "id"
 }
