@@ -121,9 +121,17 @@
             }
         }
     ],
+    "primaryKey": "id",
     "missingValues": [
         "",
         "null"
     ],
-    "primaryKey": "id"
+    "custom_checks": [
+        {
+            "name": "phone-number-value",
+            "params": {
+                "column": "no_appel"
+            }
+        }
+    ]
 }
