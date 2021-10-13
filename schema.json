@@ -11,7 +11,7 @@
     ],
     "countryCode": "FR",
     "homepage": "https://github.com/openmaraude/schema-stationstaxi",
-    "path": "https://github.com/openmaraude/schema-stationstaxi/raw/v0.1.1/schema.json",
+    "path": "https://github.com/openmaraude/schema-stationstaxi/raw/v0.1.2/schema.json",
     "image": "https://github.com/openmaraude/schema-stationstaxi/raw/v0.1.0/logo.svg",
     "licenses": [
         {
@@ -24,13 +24,13 @@
         {
             "title": "Fichier valide (CSV)",
             "name": "exemple-valide-csv",
-            "path": "https://github.com/openmaraude/schema-stationstaxi/raw/v0.1.1/exemple-valide.csv"
+            "path": "https://github.com/openmaraude/schema-stationstaxi/raw/v0.1.2/exemple-valide.csv"
         }
     ],
     "sources": [],
     "created": "2021-04-07",
-    "lastModified": "2021-09-07",
-    "version": "0.1.1",
+    "lastModified": "2021-10-13",
+    "version": "0.1.2",
     "contributors": [
         {
             "title": "Hervé Cauwelier",
